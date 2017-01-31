@@ -1,0 +1,6 @@
+on rightclick:
+    block is a sign
+    player is in "Creative"
+    line 1 of sign is "[Server]"
+    set {serverName} to line 2 of sign
+    make player execute command "/server %{serverName}%"
